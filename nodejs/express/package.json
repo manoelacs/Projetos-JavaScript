@@ -1,0 +1,23 @@
+{
+  "name": "express-son",
+  "version": "1.0.0",
+  "description": "express, schoolofnet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "son",
+    "schoolofnet\u001b[D\u001b[D\u001b[D",
+    "\u001b[D\u001b[D\u001b[D",
+    "\u001b[C\u001b[C\u001b[C\u001bof",
+    "net"
+  ],
+  "author": "Manoela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
