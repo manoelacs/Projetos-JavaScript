@@ -1,0 +1,47 @@
+<section class="panel panel-default">
+    <div class="page-header">
+        <h4 class="text-center">List od cars</h4>
+    </div>
+    <div class="panel-body">
+        <table class=" table table-bordered">
+            <thead class="text-center">
+                <tr>
+                    <th >Id</th>
+                    <th >Driver name</th>
+                    <th >Status</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+            {{#each cars}}
+                <tr>
+                    <td class="text-left">{{_id}}</td>
+                    <td>{{driver_name}}</td>
+                    <td>{{status}}</td>
+                    <td>
+                            <a href="/cars/edit/{{id}}" >
+                                <button type="submit" class="btn btn-primary" >
+                                    Edit
+                                    <span class="glyphicon-trash"></span>
+                                </button>
+                            </a>
+                    </td>
+                    <td>
+
+                            <form action="/cars/{{_id}}" method="POST">
+                                <button type="submit" class="btn btn-warning">
+                                    Delete
+                                    <span class="glyphicon-trash"></span>
+                                </button>
+
+                            </form>
+                    </td>
+
+                </tr>
+
+            {{/each}}
+            </tbody>
+
+        </table>
+    </div>
+</section>
